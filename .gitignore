@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+apps/docs/.vitepress/dist/
+apps/docs/.vitepress/cache/
+.DS_Store
+*.log

@@ -1,0 +1,10 @@
+/* Styling for cells produced by vitepress-plugin-markdownformula (output: 'span'). */
+.markdown-formula {
+  font-variant-numeric: tabular-nums;
+  border-bottom: 1px dotted var(--vp-c-brand-1);
+  cursor: help;
+}
+
+.markdown-formula:hover {
+  color: var(--vp-c-brand-1);
+}

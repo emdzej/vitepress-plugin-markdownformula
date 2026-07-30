@@ -1,0 +1,67 @@
+{
+  "name": "vitepress-plugin-markdownformula",
+  "version": "0.1.0",
+  "description": "Evaluate Excel-like formulas in your VitePress markdown tables at build time, powered by HyperFormula.",
+  "keywords": [
+    "vitepress",
+    "vitepress-plugin",
+    "markdown-it",
+    "markdown-it-plugin",
+    "markdown",
+    "formula",
+    "excel",
+    "hyperformula",
+    "spreadsheet"
+  ],
+  "license": "GPL-3.0-or-later",
+  "author": "Michał Jaskólski",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdzej/vitepress-plugin-markdownformula.git",
+    "directory": "packages/vitepress-plugin-markdownformula"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "logo",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "hyperformula": "^3.3.0"
+  },
+  "peerDependencies": {
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.10.0",
+    "markdown-it": "^14.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
+}
