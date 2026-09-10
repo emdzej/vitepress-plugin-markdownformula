@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-markdownformula",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Evaluate Excel-like formulas in your VitePress markdown tables at build time, powered by HyperFormula.",
   "keywords": [
     "vitepress",
